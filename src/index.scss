@@ -1,0 +1,21 @@
+:root {
+  --max-width: 1024px;
+  --min-width: 360px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  max-width: 1024px;
+  min-width: 360px;
+}
+
+@media (max-width: 360px) {
+  #root {
+    flex-direction: column;
+  } 
+}
