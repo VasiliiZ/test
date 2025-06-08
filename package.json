@@ -21,6 +21,7 @@
     "@types/node": "^22.15.30",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.6",
+    "@types/react-lazy-load-image-component": "^1.6.4",
     "@types/webpack": "^5.28.5",
     "@types/webpack-dev-server": "^4.7.2",
     "@typescript-eslint/eslint-plugin": "^8.33.1",
@@ -46,6 +47,7 @@
     "@reduxjs/toolkit": "^2.8.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-lazy-load-image-component": "^1.6.3",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.2"
   }

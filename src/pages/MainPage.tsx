@@ -3,7 +3,7 @@ import React from 'react';
 
 import { useCocktails } from '@/shared/hooks/useCocktails';
 import { CocktailDetails } from '@/widgets/CocktailDetails';
-import { ErrorComponent } from '@/shared/ui/ErrorComponent';
+import { NotFound } from '@/shared/ui/NotFound';
 
 const ROUTES = {
   ROOT: '/',
@@ -21,7 +21,7 @@ export const MainPage = () => {
         element={firstCocktailId ? <Navigate to={`/cocktail/${firstCocktailId}`} /> : null} 
       />
       <Route path={ROUTES.COCKTAIL} element={<CocktailDetails />} />
-      <Route path={ROUTES.ERROR} element={<ErrorComponent/> } />
+      <Route path={ROUTES.ERROR} element={<NotFound/> } />
     </Routes>
   );
 };
