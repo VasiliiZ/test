@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import { useAppSelector } from '../../shared/store/store';
 import { Cocktail } from '@/shared/store/cocktailsSlice';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import './styles.scss'
 
 export const CocktailDetails = () => {
@@ -71,7 +70,7 @@ export const CocktailDetails = () => {
                 }
               </ul>
               </div>
-              <LazyLoadImage className='image' src={item.strDrinkThumb} width={200} height={200} effect="blur"/>
+              <LazyLoadImage className='image' src={item.strDrinkThumb} width={200} height={200}/>
           </div>
         )})
       }
